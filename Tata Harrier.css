@@ -1,0 +1,135 @@
+body {
+  overflow-x: hidden;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 0 10px;
+}
+
+.tags {
+  height: 70px;
+  padding-top: 24px;
+}
+.content {
+  visibility: hidden;
+  width: 88%;
+  height: 60vh;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(36, 34, 34);
+  padding: 4em;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  top: 70px;
+}
+
+.tags:hover > .content,
+.content:hover {
+  visibility: visible;
+}
+
+.hover::after {
+  content: "";
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  flex-grow: 1;
+}
+.hover {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.sub-head {
+  box-shadow: 0 1px 10px gray;
+  height: 42px;
+  padding: 7px 0;
+  z-index: -1;
+  position: relative;
+}
+
+.sub-head a {
+  text-decoration: none;
+  padding: 8px;
+  color: #000;
+}
+.overview {
+  color: rgb(185, 0, 0) !important;
+  border-bottom: 5px solid rgb(185, 0, 0);
+}
+.dark {
+  background-color: #000;
+  color: white !important;
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+.sub-head a:hover {
+  color: rgb(185, 0, 0) !important;
+  border-bottom: 5px solid rgb(185, 0, 0);
+}
+@media screen and (max-width: 768px) {
+  .sub-head {
+    display: none;
+  }
+  .head .tags a {
+    display: none;
+  }
+  .button a {
+    display: none;
+  }
+  .advertise .adv-para {
+    display: none;
+  }
+  .brochure {
+    display: none;
+  }
+  .advertise p,
+  .advertise h1 {
+    margin-left: -20px;
+    margin-top: -12px;
+    padding: 0;
+  }
+  .alter {
+    order: -1;
+  }
+}
+
+.button a {
+  text-decoration: none;
+  border: 2px solid white;
+}
+.button a:hover {
+  background-color: rgb(185, 0, 0) !important;
+  border: 2px solid rgb(185, 0, 0);
+}
+.mumbai {
+  border-left: red !important;
+  border-top: red !important;
+  border-right: red !important;
+}
+
+.form-control {
+  border-left: black !important;
+  border-top: black !important;
+  border-right: black !important;
+  border-radius: 0 !important;
+}
+
+.mySlides {
+  display: none;
+}
+
+.button2 {
+  border: 2px solid white !important;
+}
+.button2:hover {
+  background-color: rgb(185, 0, 0) !important;
+  border: 2px solid rgb(185, 0, 0) !important;
+}
+footer {
+  padding-bottom: 78px !important;
+}
